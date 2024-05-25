@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <title>Ranked Points</title>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <form action="">
+          <h1>Rankeadas</h1>
+          <div class="input">
+            <label for="wins">Número de Vitórias:</label>
+            <input
+              id="wins"
+              type="number"
+              min="0"
+              placeholder="Somente números"
+            />
+          </div>
+          <div class="input">
+            <label for="defeats">Número de Derrotas:</label>
+            <input
+              id="defeats"
+              type="number"
+              min="0"
+              placeholder="Somente números"
+            />
+          </div>
+          <button type="submit">Resultado</button>
+        </form>
+      </div>
+    </main>
+
+    <section class="resultOf">
+      <div class="card popup">
+        <button id="closeResult">
+          <img src="./src/assets/x.svg" alt="" />
+        </button>
+        <h2></h2>
+        <button id="openElo">Níveis de Rank</button>
+      </div>
+    </section>
+
+    <section class="rankOf">
+      <div class="card table">
+        <button id="closeElo"><img src="./src/assets/x.svg" alt="" /></button>
+        <table>
+          <tr>
+            <th>Vitórias</th>
+            <th>Rank</th>
+          </tr>
+          <tr class="odd">
+            <td>Menor que 10</td>
+            <td>Ferro</td>
+          </tr>
+          <tr class="even">
+            <td>11 a 20</td>
+            <td>Bronze</td>
+          </tr>
+          <tr class="odd">
+            <td>21 a 50</td>
+            <td>Prata</td>
+          </tr>
+          <tr class="even">
+            <td>51 - 80</td>
+            <td>Ouro</td>
+          </tr>
+          <tr class="odd">
+            <td>81 a 90</td>
+            <td>Diamante</td>
+          </tr>
+          <tr class="even">
+            <td>91 a 100</td>
+            <td>Lendário</td>
+          </tr>
+          <tr class="odd">
+            <td>Maior que 100</td>
+            <td>Imortal</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <script src="./src/index.js" type="module"></script>
+  </body>
+</html>
